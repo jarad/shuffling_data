@@ -28,3 +28,5 @@ d <- read_shuffling_dir("data/shuffling/", "csv",
   mutate(date = as.Date(paste(year, month, day, sep = "-"))) %>%
   select(-data, -shuffling, -csv, -researcher, 
          -year, -month, -day)
+
+saveRDS(d, file = "data/all_shuffling.RDS")

@@ -52,3 +52,5 @@ rsconnect/
 # mac files
 .DS_Store
 
+# output files
+*.RDS
