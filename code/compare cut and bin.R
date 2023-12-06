@@ -3,7 +3,7 @@ library(nortest)
 
 
 #all cut data
-cut <- readRDS('data/all_cut.RDS')
+cut <- readRDS('all_cut.RDS')
 mean(cut$num_on_top) #25.91134
 var(cut$num_on_top) # 5.085286
 cut_hist <- ggplot(cut, aes(x=num_on_top, y=after_stat(density))) +
